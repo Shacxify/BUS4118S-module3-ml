@@ -10,7 +10,16 @@
 
 Cash Johnson | TECH 171
 
-Four scikit-learn exercises, each running on a realistic 100+ record dataset loaded from CSV. Datasets were AI-generated per the instructor's Module 3 dataset instructions and calibrated to real-world reference points (sources cited in each script's header comment). `generate_datasets.py` shows exactly how every CSV was built.
+Four scikit-learn exercises, each running on a realistic 100+ record dataset loaded from CSV. Datasets were AI-generated per the instructor's Module 3 dataset instructions and calibrated to real-world reference points (see Data sources below, also cited in each script's header comment). `generate_datasets.py` shows exactly how every CSV was built.
+
+## Data sources
+
+All four CSVs were AI-generated following the instructor's Module 3 dataset instructions (generate 100+ realistic records with an AI tool, then load them from CSV). Each one is calibrated to a real-world reference point so the data behaves realistically:
+
+- `house_prices.csv` (150 rows): San Jose, CA metro pricing, based on Zillow Home Value Index reference points (roughly $500+ per sq ft downtown, less in suburbs and the rural edges of the metro)
+- `customer_churn.csv` (200 rows): patterned after the [IBM Telco Customer Churn dataset on Kaggle](https://www.kaggle.com/datasets/blastchar/telco-customer-churn)
+- `customer_data.csv` (180 rows): patterned after the [Mall Customer Segmentation dataset on Kaggle](https://www.kaggle.com/datasets/vjchoudhary7/customer-segmentation-tutorial-in-python)
+- `housing_demand.csv` (120 months): monthly home-sales counts shaped like Santa Clara County MLS trends (spring peak, winter dip, mild long-run growth)
 
 ## Files
 
