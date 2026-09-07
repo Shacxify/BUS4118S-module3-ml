@@ -1,13 +1,13 @@
 # Extra Credit: Housing Demand Forecasting
 # Author: Cash Johnson
 #
-# Data source: housing_demand.csv (48 monthly records). AI-generated per the
+# Data source: housing_demand.csv (120 monthly records). AI-generated per the
 # instructor's Module 3 dataset instructions, shaped like Santa Clara County
 # monthly home-sales trends (spring peak, winter dip, mild long-run growth).
 # See generate_datasets.py in this repo for exactly how it was built.
 #
 # Changes from starter code:
-# - 48 months of data loaded from CSV instead of a tiny sample
+# - 120 months (10 years) of data loaded from CSV instead of a tiny sample
 # - Added a month-of-year seasonality feature on top of the linear trend,
 #   because housing demand is strongly seasonal and a straight line misses it
 # - Forecast printed as a table and saved to a labeled chart (demand_forecast.png)
@@ -72,7 +72,8 @@ Assumptions:
 Challenges:
 - Plain linear regression on month alone flatlines through the seasonal
   swings; the sine/cosine terms were needed to track the spring/winter cycle.
-- Only 4 years of history, so the trend estimate is sensitive to outliers.
+- A single straight-line trend over 10 years can hide regime changes
+  (the 2020-2022 rate environment did not behave like 2015).
 
 Potential improvements:
 - Add drivers: mortgage rates, active listings, median price.

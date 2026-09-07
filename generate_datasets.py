@@ -66,11 +66,11 @@ for spend_mu, freq_mu, age_mu, cnt in groups:
 seg = pd.concat(rows, ignore_index=True).sample(frac=1, random_state=7).reset_index(drop=True)
 seg.to_csv('customer_data.csv', index=False)
 
-# ---------- Extra credit: monthly housing demand (48 months) ----------
-months = np.arange(1, 49)
+# ---------- Extra credit: monthly housing demand (120 months) ----------
+months = np.arange(1, 121)
 trend = 820 + 3.2 * months                       # mild long-run growth
 season = 130 * np.sin((months - 3) * 2 * np.pi / 12)  # spring peak, winter dip
-sales = np.round(trend + season + rng.normal(0, 45, 48)).astype(int)
+sales = np.round(trend + season + rng.normal(0, 45, 120)).astype(int)
 pd.DataFrame({'month': months, 'sales': sales}).to_csv('housing_demand.csv', index=False)
 
 print('Wrote house_prices.csv, customer_churn.csv, customer_data.csv, housing_demand.csv')
