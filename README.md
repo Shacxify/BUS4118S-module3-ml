@@ -5,10 +5,10 @@
 ![pandas](https://img.shields.io/badge/pandas-150458?logo=pandas&logoColor=white)
 ![NumPy](https://img.shields.io/badge/numpy-013243?logo=numpy&logoColor=white)
 ![Matplotlib](https://img.shields.io/badge/matplotlib-11557C)
-![Course](https://img.shields.io/badge/SJSU-TECH%20171-0055A2)
+![Course](https://img.shields.io/badge/SJSU-BUS4%20118S-0055A2)
 ![Status](https://img.shields.io/badge/all%20scripts-passing-brightgreen)
 
-Cash Johnson | TECH 171
+Cash Johnson | BUS4 118S
 
 Four scikit-learn exercises, each running on a realistic 100+ record dataset loaded from CSV. Datasets were AI-generated per the instructor's Module 3 dataset instructions and calibrated to real-world reference points (see Data sources below, also cited in each script's header comment). `generate_datasets.py` shows exactly how every CSV was built.
 
